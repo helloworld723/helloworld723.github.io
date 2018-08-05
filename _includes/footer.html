@@ -5,6 +5,14 @@
         <svg><use xlink:href="#icon-github"></use></svg>
       </a>
       {% endif %}
+	  {% if site.linkedin_username %}
+      <a itemprop="linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+        <svg><use xlink:href="#icon-linkedin"></use></svg>
+      </a>
+      {% endif %}
+	  
+	  <!--由于长城防火墙的存在，这些先注释一下
+	 
       {% if site.facebook_username %}
       <a itemprop="facebook" href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook">
         <svg><use xlink:href="#icon-facebook"></use></svg>
@@ -25,19 +33,18 @@
         <svg><use xlink:href="#icon-instagram"></use></svg>
       </a>
       {% endif %}
-      {% if site.linkedin_username %}
-      <a itemprop="linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
-        <svg><use xlink:href="#icon-linkedin"></use></svg>
-      </a>
-      {% endif %}
+      
+	  -->
     </p>
     <ul>
         {% for link in site.links %}
           <li><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
+		<!--RSS广播，目前不会用，先注释掉
         <li><a class="feed" href="{{ site.url }}{{site.baseurl}}/feed.xml" title="Atom/RSS feed">Feed</a></li>
+		-->
     </ul>
-    <p><span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="http://www.rossener.com" target="_blank" class="creator">Thiago Rossener</a></p>
+    <p>本博客源主题为：<span>Jekflix</span> 是由 <svg class="love"><use xlink:href="#icon-heart"></use></svg><a href="http://www.rossener.com" target="_blank" class="creator">Thiago Rossener</a><svg class="love"><use xlink:href="#icon-heart"></use></svg>制作分享，特此感谢！</p>
 </footer>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 {% include stats.html %}
