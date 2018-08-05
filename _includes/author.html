@@ -1,7 +1,7 @@
 <section class="author" itemprop="author">
   <div class="details" itemscope itemtype="http://schema.org/Person">
     <img itemprop="image" class="img-rounded" src="https://i.imgur.com/34lYdLD.jpg" alt="{{ site.name }}">
-    <p class="def">Author</p>
+    <p class="def">博主</p>
     <h3 class="name">
       <a itemprop="name" href="https://github.com/{{ site.github_username }}">{{ site.username }}</a>
     </h3>
@@ -12,6 +12,13 @@
         <svg><use xlink:href="#icon-github"></use></svg>
       </a>
       {% endif %}
+	  <pre>            </pre>
+	  {% if site.linkedin_username %}
+      <a itemprop="linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+        <svg><use xlink:href="#icon-linkedin"></use></svg>
+      </a>
+      {% endif %}
+	  <!--
       {% if site.facebook_username %}
       <a itemprop="facebook" href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook">
         <svg><use xlink:href="#icon-facebook"></use></svg>
@@ -32,11 +39,7 @@
         <svg><use xlink:href="#icon-instagram"></use></svg>
       </a>
       {% endif %}
-      {% if site.linkedin_username %}
-      <a itemprop="linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
-        <svg><use xlink:href="#icon-linkedin"></use></svg>
-      </a>
-      {% endif %}
+      -->
     </p>
   </div>
 </section>
