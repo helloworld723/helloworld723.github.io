@@ -1,19 +1,19 @@
-# Site Settings
-title: Jekflix | A theme for Jekyll
-email: youremail@xyz.com
-description: Some text about your blog.
-baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
-url: "https://www.rossener.com" # the base hostname & protocol for your site
+# Site Settings 站点设置
+title: LittleCurl | IT博客
+email: 424171723@qq.com
+description: 'Java开发者，热爱技术&设计，简单乐观爱创造.' #对博客的一些描述
+baseurl: "" # the subpath of your site, e.g. /blog
+url: 'https://littlecurl.github.io' #你的GitHub地址
 google_analytics: "UA-XXXXXXXX-X"
 
-# User Settings
-username: Jekflix
-user_description: Some text about you.
+# User Settings 博主信息
+username: LittleCurl
+user_description: 'Java开发者，热爱技术&设计，简单乐观爱创造.' #对博主的一些描述
 disqus_username: disqus_username
 
-# Social Media
+# Social Media 社交媒体
 # Remove the item if you don't need it
-github_username: github_username
+github_username: littlecurl
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
