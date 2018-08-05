@@ -17,7 +17,7 @@ github_username: littlecurl
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
-linkedin_username: linkedin_username
+linkedin_username: 刘亚恒
 medium_username: medium_username
 
 # Build settings
@@ -29,14 +29,15 @@ permalink: /:title/
 gems:
   - jemoji
 
-# Links to include in menu navigation
+# Links 来加载 menu 导航
 # For external links add external: true
+# / 表示根目录 我这里就是 littlecurl.github.io这个文件夹
 links:
-  - title: Home
+  - title: 博客主页
     url: /
-  - title: About
+  - title: 关于博主
     url: /about/
-  - title: Contact
+  - title: 联系博主
     url: /contact/
 
 # Exclude my node related stuff
