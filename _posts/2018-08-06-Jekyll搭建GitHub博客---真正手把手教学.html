@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+---
+layout: post
+title: "Jekyll搭建GitHub博客"
+date: 2018/8/6 14:22:25 
+image: 'https://i.imgur.com/TyJ0jVJ.png'
+description: 真正手把手教学
+category: '浮生刘记'
+tags:
+- Jekyll
+- GitHub博客
+- 手把手
+introduction: 真正手把手教学
+---
 <html>
 	<head>
 		<meta charset="utf8">
@@ -7,82 +19,165 @@
 	<body>
 		<div name="文章目录">
 			<dl>
-				<dt><h2>文章目录</h2></dt>
-					<dd><h3><a href="#Preface">前言</a></h3></dd>
+				<dt><a name="Article-catalogue"><h3>文章目录</h3></a></dt>
+					<dd><a href="#Preface"><h4>前言</h4></a></dd>
 					<dd>
-						<dt><a href="#Part-one:basic"><h3>第一部分：基础篇</h3></a></dt>
-							<dd><a href="#era-of-blog"><h4>1.1&emsp;博客的时代</h4></a></dd>
-							<dd><a href="#categories-of-blog"><h4>1.2&emsp;博客的类别</h4></a></dd>
-							<dd><a href="#reason-of-independent-blog"><h4>1.3&emsp;为什么要开发一个独立博客？</h4></a></dd>
-							<dd><a href="#GitHub-get-quickly"><h4>1.4&emsp;GitHub快速上手</h4></a></dd>
-							<dd><a href="#Git-get-quickly"><h4>1.5&emsp;Git快速上手</h4></a></dd>
+						<dt><a href="#Part-one:basic"><h4>第一部分：基础篇</h4></a></dt>
+							<dd><a href="#era-of-blog"><h5>1.1&emsp;博客的时代</h5></a></dd>
+							<dd><a href="#categories-of-blog"><h5>1.2&emsp;博客的类别</h5></a></dd>
+							<dd><a href="#reason-of-independent-blog"><h5>1.3&emsp;为什么要开发一个独立博客？</h5></a></dd>
+							<dd><a href="#GitHub-get-quickly"><h5>1.4&emsp;GitHub快速上手</h5></a></dd>
+							<dd><a href="#Git-get-quickly"><h5>1.5&emsp;Git快速上手</h5></a></dd>
 					</dd>
 					<dd>
-						<dt><a href="#Part-two:building"><h3>第二部分：搭建篇</h3></a></dt>
-							<dd><a href="#Environmental-preparation"><h4>2.1&emsp;环境准备</h4></a></dd>
-							<dd><a href="#Selected-theme"><h4>2.2&emsp;选定主题</h4></a></dd>
-							<dd><a href="#Modify-configuration"><h4>2.3&emsp;修改配置文件</h4></a></dd>
-							<dd><a href="#Post-articles"><h4>2.4&emsp;发布文章</h4></a></dd>
+						<dt><a href="#Part-two:building"><h4>第二部分：搭建篇</h4></a></dt>
+							<dd><a href="#Environmental-preparation"><h5>2.1&emsp;环境准备</h5></a></dd>
+							<dd><a href="#Selected-theme"><h5>2.2&emsp;选定主题</h5></a></dd>
+							<dd><a href="#Modify-configuration"><h5>2.3&emsp;修改配置文件</h5></a></dd>
+							<dd><a href="#Post-articles"><h5>2.4&emsp;发布文章</h5></a></dd>
 					</dd>
 					<dd>
-						<dt><a href="#Part-three:advanced"><h3>第三部分：进阶篇</h3></a></dt>
-							<dd><a href="#Extended-function"><h4>3.1&emsp;扩展功能</h4></a></dd>
+						<dt><a href="#Part-three:advanced"><h4>第三部分：进阶篇</h4></a></dt>
+							<dd><a href="#Extended-function"><h5>3.1&emsp;扩展功能</h5></a></dd>
 					</dd>
-					<dd><a href="#ending"><h3>结尾</h3></a></dd>
+					<dd><a href="#ending"><h4>结尾</h4></a></dd>
 			</dl>
 		</div>
+		<hr />
 		<div name="文章主体">
-			<a name="Preface"><h3>前言</h3></a>
+			<a name="Preface"><h4>前言</h4></a>
 			<p>
-				这里是前言
+				&emsp;&emsp;这篇文章是一个集合，糅合了我自己的语言风格，当然，我敢拍着胸脯说，凡是我写文章，必属精品。
+				提醒一下阅读后感到有收获的小伙伴：GitHub有<a href="https://github.com/littlecurl/littlecurl.github.io">star</a>的功能呦，
+				有<a href="https://github.com/littlecurl/littlecurl.github.io">star</a>就相当于被点赞，
+				你的点赞会给作者带来很大动力的呢。**不强求！说真的，不强求！！咳咳，不强求！！！**
+				你点一下图片试试嘛，会跳转的呢。
+				<a href="https://github.com/littlecurl/littlecurl.github.io">![GitHub的star图片](https://i.imgur.com/3vA7pDr.png)</a>
+			<br />
 			</p>
-			<a name="Part-one:basic"><h3>第一部分：基础篇</h3></a>
-				<a name="era-of-blog"><h4>1.1&emsp;博客的时代</h4></a>
+			<a name="Part-one:basic"><h4>第一部分：基础篇</h4></a>
+			<a href="#Part-two:building"><h4>不看第一部分，直接跳转到第二部分：搭建篇</h4></a>
+				<a name="era-of-blog"><h5>1.1&emsp;博客的时代</h5></a>
 				<p>
-					这是博客的时代
+					&emsp;&emsp;百度百科如是说：“博客是继MSN.BBS.ICQ之后出现的第4种网络交流方式，现已受到大家的欢迎，
+					是网络时代的个人“读者文摘”，是以超级链接为武器的网络日记，它代表着新的生活、工作和学习方式。”
 				</p>
-				<a name="categories-of-blog"><h4>1.2&emsp;博客的类别</h4></a>
 				<p>
-					这是博客的类别
+					&emsp;&emsp;当然还有其他渠道来生活、工作、学习，比如：微信公众号，一个App，知乎，简书......
+					之所以有这么多的渠道，其实是一个“人以群分”的表现，微信公众号因为是自己选择关注的，所以有点私人定制的感觉；
+					一个App，是韩寒创立的，有点追忆时代的感觉；知乎偏吹牛；简书篇文艺；还有博客园、掘金、CSDN、51CTO......
+					不论哪种渠道，归根结底，都是阅读文章。这些都可以**泛称**为博客，可以说当代工作、生活、学习方式是博客的时代。
 				</p>
-				<a name="reason-of-independent-blog"><h4>1.3&emsp;为什么要开发一个独立博客？</h4></a>
+				<a name="categories-of-blog"><h5>1.2&emsp;博客的类别</h5></a>
 				<p>
-					这是为什么要开发一个独立博客？
-				</p>
-				<a name="GitHub-get-quickly"><h4>1.4&emsp;GitHub快速上手</h4></a>
+					&emsp;&emsp;按存在的方式分类，博客大体上可以分为：托管和自建两类。
 				<p>
-					这是GitHub快速上手
+					&emsp;&emsp;托管类的像CSDN普通博客，简书，知乎这类的可以说都是，博客风格是人家规定死的，自己不能变，
+				而且比如CSDN还有很讨厌的广告大肆存在（当然，有广告可以理解，都是为了生活嘛），有些广告和自己有关，
+				有些广告就是碍眼，这属于广告投放算法的相关知识了，我还没有涉猎。
+				当然，托管类的优点就是方便，快捷。自己不用管网站的边边角角，把文章写好就行了。
 				</p>
-				<a name="Git-get-quickly"><h4>1.5&emsp;Git快速上手</h4></a>
 				<p>
-					这是Git快速上手
+					&emsp;&emsp;自建类的像GitHub搭建博客，自己买域名、服务器搭建博客......
+				这类博客大都有自己的风格，或炫酷，或干净。有些存在广告，有些丝毫没有广告。凡是自建博客的一般都会考虑到读者的阅读
+				体验，把广告置于不碍眼的地方。
 				</p>
-			<a name="Part-two:building"><h3>第二部分：搭建篇</h3></a>
-				<a name="Environmental-preparation"><h4>2.1&emsp;环境准备</h4></a>
+				</p>
+				<a name="reason-of-independent-blog"><h5>1.3&emsp;为什么要开发一个独立博客？</h5></a>
+				<p>
+					&emsp;&emsp;独立和不独立的博客都有以下作用：
+					<ol>
+						<li>个人自由表达和出版；</li>
+						<li>知识过滤与积累；</li>
+						<li>深度交流沟通的网络新方式；</li>
+						<li>博客营销。</li>
+					</ol>
+					&emsp;&emsp;之所以要自己搭建一个独立的博客，一方面是想避免不必要的广告，另一方面就是装X！难道你不觉得有一个
+				自己一手搭建的博客，并持续维护的人很厉害吗？
+				</p>
+				<a name="GitHub-get-quickly"><h5>1.4&emsp;GitHub快速上手</h5></a>
+				<p>
+					&emsp;&emsp;前面几段话都相当于是铺垫，一步一步勾引你来搭建自己的博客。当然，在这之前你需要了解两个惹人喜爱的小宝贝儿，一个是这一段描述的GitHub，
+				另一个是紧接着下面要讲的Git，我尽量用人类能看懂的语法来讲这两个惹人喜爱的小宝贝儿。
+				<ol>
+					<li>
+						GitHub主页地址：<a href="https://github.com/">https://github.com/</a>
+					</li>
+					<li>
+						先注册一个GitHub账号。
+						![GitHub注册界面](https://i.imgur.com/DcjD3Ot.png)
+						![填写好的GitHub注册界面](https://i.imgur.com/vH2Z4lP.png)
+						![注册Continue](https://i.imgur.com/GEsX9xq.png)
+						![注册Submit](https://i.imgur.com/ExZAo3A.png)
+					</li>
+					<li>
+						创建存放博客文件的仓库。
+						![new repository](https://i.imgur.com/O5mlbk6.png)
+						![验证邮箱](https://i.imgur.com/rgJw5KD.png)
+						![QQ邮箱邮件](https://i.imgur.com/ZMMCFz6.png)
+						![确认验证](https://i.imgur.com/VS1Vsms.png)
+						![再次new repository](https://i.imgur.com/LAMDZAF.png)
+						![创建仓库](https://i.imgur.com/tRHxult.png)
+						![创建好的空仓库](https://i.imgur.com/QVY3peI.png)
+					</li>
+				</ol>
+				</p>
+				<a name="Git-get-quickly"><h5>1.5&emsp;Git快速上手</h5></a>
+				<p>
+					&emsp;&emsp;刚才是不是让你把浏览器最小化了？你怎么还在看着浏览器？快去休息一会吧，学的已经差不多了，一口吃个胖子的话会消化不良的。听我的，10分钟之后再回来。<br />
+				</p>
+				<hr />
+				<p>
+					&emsp;&emsp;欢迎回来，刚才去哪浪了？能否分享一下给我？我的**QQ邮箱：424171723@qq.com**有什么问题的话可以mail me.  
+				</p>
+				<p>
+					&emsp;&emsp;马不停蹄，接下来快速上手一下Git，这里有一个大神介绍给大家：廖雪峰。他有一个很牛的官方网站：
+					<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">廖雪峰的官方网站</a>。
+					你可以从大神的网站学习比较完整的Git教程，很显然，廖大牛写的这篇Git教程，世上已很难有人类能超越了。为了避免重复造轮子，我就在这里讲给你**三个必须的**Git命令。
+					必须到什么程度？靠这三个命令，就给别人可以装X了。
+				</p>
+				<p>
+					<ol>
+						<li>git&emsp;add&emsp;.&emsp;&emsp;&emsp;（最后面是一个点）</li>
+						<li>git&emsp;commit&emsp;-m&emsp;"引号里写你修改过的文件的简单描述"</li>
+						<li>git&emsp;push&emsp;origin&emsp;master&emsp;&emsp;
+							<br />（有时候这个命令push不上去，需要加一个 -f参数来force暴力push，也就是：
+							<br />git&emsp;push&emsp;-f&emsp;origin&emsp;master）</li>
+					</ol>
+				</p>
+			<a name="Part-two:building"><h4>第二部分：搭建篇</h4></a>
+			<a href="#Part-three:advanced"><h4>不看第二部分，直接跳转到第三部分：进阶篇</h4></a>
+				<a name="Environmental-preparation"><h5>2.1&emsp;环境准备</h5></a>
 				<p>
 					这是环境准备
 				</p>
-				<a name="Selected-theme"><h4>2.2&emsp;选定主题</h4></a>
+				<a name="Selected-theme"><h5>2.2&emsp;选定主题</h5></a>
 				<p>
 					这是选定主题
 				</p>
-				<a name="Modify-configuration"><h4>2.3&emsp;修改配置文件</h4></a>
+				<a name="Modify-configuration"><h5>2.3&emsp;修改配置文件</h5></a>
 				<p>
 					这是修改配置文件
 				</p>
-				<a name="Post-articles"><h4>2.4&emsp;发布文章</h4></a>
+				<a name="Post-articles"><h5>2.4&emsp;发布文章</h5></a>
 				<p>
 					这是发布文章
 				</p>
-			<a name="Part-three:advanced"><h3>第三部分：进阶篇</h3></a>
-				<a name="Extended-function"><h4>3.1&emsp;扩展功能</h4></a>
+			<a name="Part-three:advanced"><h4>第三部分：进阶篇</h4></a>
+			
+				<a name="Extended-function"><h5>3.1&emsp;扩展功能</h5></a>
 				<p>
 					这是扩展功能
 				</p>
-			<a name="ending"><h3>结尾</h3></a>
+			<a name="ending"><h4>结尾</h4></a>
 				<p>
-					这是结尾，声明一下写这篇文章的原因
+					这是结尾，
 				</p>
+			<a href="#Article-catalogue"><h4>回到目录看一眼</h4></a>
 		</div>
 	</body>
 </html>
+
+
+
+
